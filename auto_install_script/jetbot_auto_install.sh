@@ -5,7 +5,7 @@ TORCH_FILE="torch-1.7.0-cp36-cp36m-linux_aarch64.whl"
 URL_PYTORCH="https://nvidia.box.com/shared/static/cs3xn3td6sfgtene6jdvsxlr366m2dhq.whl"
 TORCHVISION_VER="0.8.1"
 BANNER="==== AUTO INSTALL SCRIPT: pytorch, torchvision, torch2trt, trt-pose ===="
-REQ_FILE=requirements.txt
+REQ_FILE="requirements.txt"
 
 sudo apt-get update
 sudo apt-get dist-upgrade
@@ -102,9 +102,9 @@ fi
 if [ -f "$REQ_FILE" ]; then
     echo "$REQ_FILE file exists."
     echo "Installing other python3 requirements using pip3... "
-    cat requirements.txt
+    cat $REQ_FILE
     echo "$BANNER"
-    pip3 install -r requirements.txt
+    pip3 install -r $REQ_FILE
     echo " .. finished!"
     echo "$BANNER"
 fi
