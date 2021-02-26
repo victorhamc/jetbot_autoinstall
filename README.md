@@ -13,3 +13,4 @@ Automated way to install pytorch, torchvision, torch2trt, trt-pose using a simpl
 ## References
 
 + [Pytorch, torchvision and deps] https://forums.developer.nvidia.com/t/pytorch-for-jetson-version-1-7-0-now-available/72048
++ [Swap] https://github.com/NVIDIA-AI-IOT/jetbot/blob/master/scripts
