@@ -46,7 +46,7 @@ git clone --branch v$TORCHVISION_VER https://github.com/pytorch/vision torchvisi
 echo " .. finished!"
 echo "$BANNER"
 
-if [ -f "torchvision" ]; then
+if [ -d "torchvision" ]; then
     echo "Torchvision repo clonned"
     cd torchvision
     export BUILD_VERSION=$TORCHVISION_VER
@@ -65,7 +65,7 @@ fi
 echo "Installing torch2trt"
 echo "Cloning torch2trt repo"
 git clone https://github.com/NVIDIA-AI-IOT/torch2trt
-if [ -f "torch2trt" ]; then
+if [ -d "torch2trt" ]; then
     echo "Torch2trt repo clonned"
     cd torch2trt
     echo "Installing torch2trt"
@@ -86,7 +86,7 @@ sudo apt-get install python3-matplotlib
 echo "$BANNER"
 echo "Cloning trt-pose repo"
 git clone https://github.com/NVIDIA-AI-IOT/trt_pose
-if [ -f "trt_pose" ]; then
+if [ -d "trt_pose" ]; then
     cd trt_pose
     echo "Installing trt-pose"
     sudo python3 setup.py install
